@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<!-- 02/25/05 18:30 CST ok -->
+
+<web-app>
+
+  <display-name>The Online Spreadsheet Project</display-name>
+
+  <servlet>
+    <servlet-name>ImageSender</servlet-name>
+    <servlet-class>ImageSender</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ImageSender</servlet-name>
+    <url-pattern>/servlet/ImageSender</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Gnuplot</servlet-name>
+    <servlet-class>gnuplot.binOutput</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Gnuplot</servlet-name>
+    <url-pattern>/servlet/gnuplot.binOutput</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <session-timeout>
+      30
+    </session-timeout>
+  </session-config>
+
+  <welcome-file-list>
+    <welcome-file>
+      index.jsp
+    </welcome-file>
+    <welcome-file>
+      index.html
+    </welcome-file>
+    <welcome-file>
+      index.htm
+    </welcome-file>
+  </welcome-file-list>
+
+</web-app>
+

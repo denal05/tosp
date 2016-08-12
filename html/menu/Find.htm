@@ -1,0 +1,55 @@
+<!--
+The Online Spreadsheet Project
+Copyleft (C) 2003-2006 Denis Aleksandrov tosp05@gmail.com
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+-->
+
+<HTML>
+<HEAD>
+  <TITLE>Edit Find:</TITLE>
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="/tosp/basic.css" TITLE="general">
+</HEAD>
+
+<BODY>
+
+<FORM NAME="find" ACTION="/tosp/jsp/menu/Find.jsp">
+  <INPUT TYPE="Hidden" NAME="submenu" VALUE="find">
+  <TABLE ALIGN="Center">
+    <TR>
+      <TD CLASS="menu_popup">
+        Find:
+      </TD>
+    </TR>
+    <TR>
+      <TD BGCOLOR="#111111"><INPUT TYPE="Text" NAME="find">
+    </TR>
+    <TR>
+      <TD BGCOLOR="#111111"><INPUT TYPE="Radio" NAME="filter" VALUE="begins" CHECKED="True">it begins with...
+    </TR>
+    <TR>
+      <TD BGCOLOR="#111111"><INPUT TYPE="Radio" NAME="filter" VALUE="contains">it contains...
+    </TR>
+    <TR>
+      <TD BGCOLOR="#111111"><INPUT TYPE="Radio" NAME="filter" VALUE="ends">it ends with...
+    </TR>
+  </TABLE>
+  <P ALIGN="Center">
+    <INPUT TYPE="Submit" Name="ok" VALUE="OK">
+  </P>
+</FORM>
+
+</BODY>
+</HTML>

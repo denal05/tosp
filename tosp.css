@@ -1,0 +1,138 @@
+/* 
+   <!--
+   The Online Spreadsheet Project
+   Copyleft (C) 2003-2006 Denis Aleksandrov denal05@gmail.com
+  
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License
+   as published by the Free Software Foundation; either version 2
+   of the License, or (at your option) any later version.
+  
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+  
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+   -->
+*/
+
+/* Version: 2
+ * Generic fonts: serif, sans-serif, cursive, fantasy, monospace.
+ */
+
+@import "basic.css";
+
+body
+{
+  color:                        #ffffff;
+  background:                   #333333;
+/*
+  background-image:		url("/pix/bg.jpg");
+  background-attachment:	fixed;
+*/
+}
+
+.bookmark_category
+{
+  font-face:			serif;
+  font-size:			10pt;
+  font-style:			italic;
+}
+
+.bookmark
+{
+  font-face:			serif;
+  font-size:			8pt;
+  font-weight:			bold;
+  background:			#444455;
+}
+
+.copyright
+{
+  font-face:			monospace;
+  font-size:			8pt;
+  text-decoration:		underline;
+  color:			#000000;
+  background:			#999999;
+}
+
+.fdl
+{
+  font-face:			monospace;
+  font-size:			10pt;
+  text-decoration:		underline;
+  color:			#ffffff;
+  background:			#990000;
+}
+
+.logo
+{
+  font-face:			serif;
+  font-size:			10pt;
+  font-weight:			bold;
+  font-style:			italic;
+  color:			#ffffff;/*c3a94d ff8800*/
+  text-align:			center;
+}
+
+.lambda
+{
+  font-face:			Arial;
+}
+
+.poetry_list
+{
+  font-face:			monospace;
+  font-size:			12pt;
+  font-weight:			bold;
+}
+
+.contact_list
+{
+  font-face:			monospace;
+  font-size:			10pt;
+  font-weight:			bold;
+  color:			#ff0000;
+  text-align:			center;
+}
+
+.headlines
+{
+  font-face:			monospace;
+  font-size:			12pt;
+}
+
+.monospace_small
+{
+  font-face:			monospace;
+  font-size:			7pt;
+}
+
+.legend
+{
+  font-face:			monospace;
+  font-size:                    10pt;
+  font-variant:                 small-caps;
+}
+
+.graph
+{
+  font-face:			serif;
+  font-size:			10pt;
+}
+
+ol.lowercase
+{
+  list-style-type:              lower-alpha
+}
+
+#Img1
+{
+  float:			right;
+  padding:			25px;
+  margin-top:			-145px;
+  margin-right:			-20px;
+}

@@ -1,0 +1,178 @@
+<!--
+The Online Spreadsheet Project
+Copyleft (C) 2003-2006 Denis Aleksandrov tosp05@gmail.com
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+-->
+
+<HTML>
+<HEAD>
+  <LINK REL=STYLESHEET TYPE="text/css" HREF="/tosp/tosp.css" TITLE="general">
+</HEAD>
+<BODY onLoad="javascript: document.signup.u.focus()">
+
+<TABLE WIDTH=100%>
+  <TR>
+    <TD>
+      <TABLE WIDTH=70% BGCOLOR="#222222" STYLE="border: 1px solid white">
+        <TR>
+          <TD>
+            Download:
+          </TD>
+          <TD>
+            <A HREF="/tosp/doc/tosp/tosp_v1.0.jar">tosp_v1.0.jar</A>
+          </TD>
+        </TR>
+        <TR>
+          <TD>
+          </TD>
+          <TD>
+            tosp_v2.0.jar
+          </TD>
+        </TR>
+      </TABLE>
+      <P><H1>The Online Spreadsheet Project</H1> is an open-source project, where anyone can register for free and
+      use a spreadsheet-like application, with functionality like the Google Spreadsheet or OpenOffice.org Calc. TOSP v2.0
+      employs
+      <A HREF="http://gnuplot.info">gnuplot</A>
+      to draw the function graphs. A preview of the use of gnuplot is on the home page. Here is a
+      <A HREF="http://gnuplot.sourceforge.net/demo/">demo</A>
+      of the power of gnuplot. This began as a final project in my Web Server Programming class, taught by
+      <A HREF="http://www.comsc.ucok.edu/~sung" TARGET="_blank">Dr. Hong Sung</A>.
+      Since it is concentrated on <B>server-side programming</B>, there is no fancy stuff, although the idea of this project
+      has a great potential. By using client-side programming like AJAX, Java applets or Javascript, this could look
+      just like any other application. This sample applet that comes as a demo with J2SDK is a proof of the power of
+      client-side programming using a Java applet:
+      <A HREF="/tosp/applet/SpreadSheet/example1.html" TARGET="_blank">/tosp/applet/SpreadSheet/example.html</A>.
+      There are plenty of client-side
+      <A HREF="http://www.google.com/search?q=online+spreadsheet" TARGET="_blank">(javascript/applet) online spreadsheets</A>
+      that other people have written. The best example of the power of Java and the JavaServerPages technology is
+      <A HREF="http://www.wolfram.com/products/webmathematica/examples/examples.html" TARGET="_blank">"webMathematica"</A>.
+      <P>All of the data in The Online SpreadSheet Project is stored in a
+      <A HREF="http://www.mysql.com" TARGET="_blank">MySQL</A>
+      database on the server. The good side is that users don't need to save it on their own computer; the bad side is that 
+      if they wanted to save it, it was not designed as such (for example, in XML format). However, users can save a
+      snapshot of their spreadsheet as a webpage or print it out.
+      <P>The class "Web Server Programming" is a senior-level seminar, offered at the
+      <A HREF="http://www.comsc.ucok.edu" TARGET="_blank">Computer Science Department</A> at our
+      <A HREF="http://www.uco.edu" TARGET="_blank">University of Central Oklahoma</A>.
+      In this class we use
+      <A HREF="http://java.sun.com/products/servlet" TARGET="_blank">servlets</A>,
+      <A HREF="http://java.sun.com/products/jsp" TARGET="_blank">Java Server Pages</A>, and 
+      <A HREF="http://www.mysql.com" TARGET="_blank">MySQL</A>
+      to design dynamic web pages. Full text and code from the textbook can be found at
+      <A HREF="http://www.coreservlets.com" TARGET="_blank"> www.CoreServlets.com</A>
+      <P>Questions &amp; comments: denal05@gmail.com
+    </TD>
+    <TD ALIGN="Center">
+      <FORM NAME="signup" ACTION="/tosp/jsp/signup.jsp" METHOD="Post" TARGET="_top">
+        <TABLE BGCOLOR="#222222" STYLE="border: 1px solid white">
+          <TR>
+            <TD VALIGN="Top" ALIGN="Center" BGCOLOR="#000000" STYLE="border: 1px solid white">
+              <FONT FACE="serif" SIZE=2>
+                <I>Sign up:</I>
+              </FONT><BR>
+            </TD>
+          </TR>
+          <TR>
+            <TD VALIGN="Top" ALIGN="Left">
+              <FONT FACE="monospace" SIZE=1>
+                username:
+              </FONT><BR>
+              <INPUT TYPE="Text" NAME="u" SIZE=17>
+            </TD>
+          </TR>
+          <TR>
+            <TD VALIGN="Top" ALIGN="Left">
+              <FONT FACE="monospace" SIZE=1>
+                password:
+              </FONT><BR>
+              <INPUT TYPE="Password" NAME="n1" SIZE=17>
+            </TD>
+          </TR>
+          <TR>
+            <TD VALIGN="Top" ALIGN="Left">
+              <FONT FACE="monospace" SIZE=1>
+                confirm:
+              </FONT><BR>
+              <INPUT TYPE="Password" NAME="n2" SIZE=17>
+            </TD>
+          </TR>
+          <TR>
+            <TD>
+              <TABLE WIDTH=100%>
+                <TR>
+                  <TD>
+                    <FONT FACE="monospace" SIZE=1>
+                      + <A HREF="https://localhost:8443/" TARGET="_top"><B>SECURE</B></A>
+                    </FONT>
+                  </TD>
+                  <TD ALIGN="Right">
+                    <INPUT TYPE="Submit" VALUE="SIGNUP">
+                  </TD>
+                </TR>
+              </TABLE>
+            </TD>
+          </TR>
+        </TABLE>
+      </FORM>
+      <TABLE BGCOLOR="#FFFFFF">
+        <TR>
+          <TD ALIGN="Center">
+            <A HREF="http://www.mysql.com" TARGET="_blank">
+              <IMG SRC="/tosp/pix/mysql.png" ALT="powered by: MySQL" BORDER=0 WIDTH=90>
+            </A>
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="Center">
+            <A HREF="http://www.redhat.com" TARGET="_blank">
+              <IMG SRC="/tosp/pix/redhat.png" BORDER=0 WIDTH=90 ALT="powered by: RedHat">
+            </A>
+          </TD>
+        </TR>
+        <TR>
+          <TD ALIGN="Center">
+            <A HREF="http://jakarta.apache.org/tomcat/tomcat-5.0-doc/" TARGET="_blank">
+              <IMG SRC="/tosp/pix/tomcat.gif" BORDER=0 WIDTH=90 ALT="powered by: Tomcat">
+            </A>
+          </TD>
+        </TR>
+      </TABLE>
+      <TABLE>
+        <TR>
+          <TD ALIGN="Center">
+            <A HREF="http://www.java.com" TARGET="_blank">
+              <IMG SRC="/tosp/pix/get_java_blue-button.gif" BORDER=0 ALT="Get Java!">
+            </A>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+</TABLE>
+
+<HR>
+
+<TABLE>
+  <TR>
+    <TD CLASS="copyright">
+      Note: The Online Spreadsheet Project is copylefted under the <A HREF="/tosp/gpl.txt" TARGET="_blank">GNU General Public License</A>.
+    </TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>

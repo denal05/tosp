@@ -1,0 +1,98 @@
+/* <!--
+ * The Online Spreadsheet Project
+ * Copyleft (C) 2003-2006 Denis Aleksandrov denal05@gmail.com
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ * -->
+ */
+body
+{
+  color:			#ffffff;
+  background:			#505575;/*550000*/
+}
+
+a:link, a:visited
+{
+  color:			#ffff99;
+  background:			transparent;
+  font-weight:			bold; 
+  text-decoration:		none;
+}
+
+a:active
+{
+  color:			#33dd33;
+  background:			transparent;
+  font-weight:			bold; 
+  text-decoration:		none;
+}
+
+a:hover
+{
+  color:			#ffffff;
+  background:			#990000;
+  font-weight:			bold; 
+  text-decoration:		underline;
+}
+
+.denal_menu
+{
+  text-align:			center;
+  font-face:			monospace;
+  font-size:			8pt;
+  border:			1px solid white;
+  background:			#333333;
+}
+
+.denal_menu_active
+{
+  text-align:			center;
+  font-face:			serif;
+  font-size:			8pt;
+  background:			#333333;
+}
+
+.menu
+{
+  width:			70px;
+  font-face:			monospace;
+  font-size:			10pt;
+  background:			#333333;
+}
+
+.menu_selected
+{
+  width:			70px;
+  font-face:			monospace;
+  font-size:			10pt;
+  background:			#000000;
+}
+
+.menu_special
+{
+  color:			#0000ff;
+  width:			70px;
+  font-face:			monospace;
+  font-size:			10pt;
+  background:			#990000;
+}
+
+.menu_popup
+{
+  text-align:			center;
+  background:			#333333;
+  font-face:			serif;
+  font-style:			italic;
+}
